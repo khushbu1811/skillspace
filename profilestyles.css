@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+/* Navigation Menu */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Center content vertically */
+    position: relative; /* For positioning children absolutely */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the content within the nav container */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width for alignment */
+    margin: 0 auto; /* Center the nav horizontally within the header */
+    padding: 0 20px; /* Add padding to ensure space on the sides */
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    position: absolute; /* Position the logo absolutely */
+    left: 20px; /* Position logo at the left edge */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center menu items within nav */
+    flex: 1; /* Allow ul to take up available space */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: #e0f7fa;
+}
+
+/* Main */
+
+main.profile-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #00695c;
+}
+
+.profile-overview {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #00695c;
+}
+
+.profile-picture button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-picture button:hover {
+    background-color: #004d40;
+}
+
+.user-info {
+    margin-left: 20px;
+}
+
+.user-info h1 {
+    margin: 0;
+}
+
+.user-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.profile-details, .activity-summary, .settings, .additional-info {
+    margin-bottom: 20px;
+}
+
+.profile-details p, .additional-info p {
+    margin: 10px 0;
+}
+
+button#edit-details-btn {
+    padding: 5px 10px;
+    background-color: #00695c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#edit-details-btn:hover {
+    background-color: #004d40;
+}
+
+ul#activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul#activity-list li {
+    margin: 5px 0;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.settings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings ul li {
+    margin: 5px 0;
+}
+
+.settings ul li a {
+    color: #00695c;
+    text-decoration: none;
+}
+
+.settings ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}

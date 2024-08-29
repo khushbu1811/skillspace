@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Introduction to Programming with Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b2dfdb;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .quiz-container {
+            background-color: #e0f7fa;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .quiz-heading {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #b2dfdb;
+            color: #00695c;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #5d7d9e;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-heading">Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the correct file extension for Python files ?</p>
+                <label><input type="radio" name="q1" value="wrong"> .pyth</label><br>
+                <label><input type="radio" name="q1" value="correct"> .py</label><br>
+                <label><input type="radio" name="q1" value="wrong"> .pt</label><br>
+                <label><input type="radio" name="q1" value="wrong"> .pyt</label>
+            </div>
+            <div class="question">
+                <p>2. Which of the following is a correct way to create a variable in Python ?</p>
+                <label><input type="radio" name="q2" value="wrong"> var a = 5</label><br>
+                <label><input type="radio" name="q2" value="correct"> a = 5</label><br>
+                <label><input type="radio" name="q2" value="wrong"> int a = 5</label><br>
+                <label><input type="radio" name="q2" value="wrong"> a : 5</label>
+            </div>
+            <div class="question">
+                <p>3. Which of the following is used to insert comments in Python ?</p>
+                <label><input type="radio" name="q3" value="wrong"> // This is a comment</label><br>
+                <label><input type="radio" name="q3" value="wrong"> /* This is a comment */</label><br>
+                <label><input type="radio" name="q3" value="correct"> # This is a comment</label><br>
+                <label><input type="radio" name="q3" value="wrong"> <!- - This is a comment - -></label>
+            </div>
+            <div class="question">
+                <p>4. How do you create a list in Python ?</p>
+                <label><input type="radio" name="q4" value="correct"> myList = [1, 2, 3]</label><br>
+                <label><input type="radio" name="q4" value="wrong"> myList = (1, 2, 3)</label><br>
+                <label><input type="radio" name="q4" value="wrong"> myList = {1, 2, 3}</label><br>
+                <label><input type="radio" name="q4" value="wrong"> myList = <1, 2, 3></label>
+            </div>
+            <div class="question">
+                <p>5. What is the output of print(2 ** 3) in Python ?</p>
+                <label><input type="radio" name="q5" value="wrong"> 5</label><br>
+                <label><input type="radio" name="q5" value="correct"> 8</label><br>
+                <label><input type="radio" name="q5" value="wrong"> 6</label><br>
+                <label><input type="radio" name="q5" value="wrong"> 7</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>function submitQuiz() {
+            let correctAnswers = 0;
+            const totalQuestions = 5;
+            const form = document.getElementById('quiz-form');
+            const resultDiv = document.getElementById('result');
+
+            const answers = {
+                q1: "correct",
+                q2: "correct",
+                q3: "correct",
+                q4: "correct",
+                q5: "correct"
+            };
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const userAnswer = form[`q${i}`].value;
+                if (userAnswer === answers[`q${i}`]) {
+                    correctAnswers++;
+                }
+            }
+
+            if (correctAnswers > 2) {
+                resultDiv.innerHTML = `<p>Congratulations! You passed the quiz.  <a href="certificate.jpg" download="certificate.jpg">Download your certificate</a>.</p>`;
+            } else {
+                resultDiv.innerHTML = `<p>Unfortunately, you didn't pass. Please try the quiz again.</p>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

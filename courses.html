@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="coursesstyles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">SkillSpace</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <h2>Filter Courses</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox" id="coding"> Coding</li>
+                    <li><input type="checkbox" id="design"> Design</li>
+                    <li><input type="checkbox" id="business"> Business</li>
+                    <li><input type="checkbox" id="health"> Health</li>
+                    <li><input type="checkbox" id="language"> Language</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h3>Difficulty</h3>
+                <ul>
+                    <li><input type="checkbox" id="beginner"> Beginner</li>
+                    <li><input type="checkbox" id="intermediate"> Intermediate</li>
+                    <li><input type="checkbox" id="advanced"> Advanced</li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <ul>
+                    <li><input type="checkbox" id="free"> Free</li>
+                    <li><input type="checkbox" id="paid"> Paid</li>
+                </ul>
+            </div>
+            <!-- <div class="filter-group">
+                <h3>Rating</h3>
+                <ul>
+                    <li><input type="checkbox" id="4stars"> 4 Stars & Up</li>
+                    <li><input type="checkbox" id="3stars"> 3 Stars & Up</li>
+                    <li><input type="checkbox" id="2stars"> 2 Stars & Up</li>
+                </ul>
+            </div> -->
+            <section class="apply">
+                <button onclick="window.location.href='#'">Apply Filters</button>
+            </section>
+        </aside>
+
+        <div class="courses">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <img src="itp.jpg" alt="Course Thumbnail">
+                <h3>Introduction to Programming with Python</h3>
+                <p>Category : Coding</p>
+                <p>Instructor : Rohan Joshi</p>
+                <p>Price : Free</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course1.html'">More Info</button>
+            </div>
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <img src="sada.jpg" alt="Course Thumbnail">
+                <h3>Business Statistics and Data Analysis</h3>
+                <p>Category : Business</p>
+                <p>Instructor : Siya Desai</p>
+                <p>Price : Rs 3000</p>
+                <p>Difficulty : Intermediate</p>
+                <p>Rating: ★★★★★</p>
+                <button onclick="window.location.href='course2.html'">More Info</button>
+            </div>
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <img src="aeg.jpg" alt="Course Thumbnail">
+                <h3>Advanced English Grammar and Syntax</h3>
+                <p>Category : Language</p>
+                <p>Instructor : Priya Jadhav</p>
+                <p>Price : Rs 5500</p>
+                <p>Difficulty : Advanced</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course3.html'">More Info</button>
+            </div>
+            <!-- Course Card 4 -->
+            <div class="course-card">
+                <img src="sada.jpg" alt="Course Thumbnail">
+                <h3>Intermediate Nutrition and Dietary Planning</h3>
+                <p>Category : Health</p>
+                <p>Instructor : Saniya Raheja</p>
+                <p>Price : Rs 3500</p>
+                <p>Difficulty : Intermediate</p>
+                <p>Rating: ★★★☆☆</p>
+                <button onclick="window.location.href='course4.html'">More Info</button>
+            </div>
+            <!-- Course Card 5 -->
+            <div class="course-card">
+                <img src="aeg.jpg" alt="Course Thumbnail">
+                <h3>Introduction to Graphic Design Principles</h3>
+                <p>Category : Design</p>
+                <p>Instructor : Aarav Sharma</p>
+                <p>Price : Free</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course5.html'">More Info</button>
+            </div>
+            <!-- Course Card 6 -->
+            <div class="course-card">
+                <img src="itp.jpg" alt="Course Thumbnail">
+                <h3>Beginner French Pronunciation and Listening Skills</h3>
+                <p>Category : Language</p>
+                <p>Instructor : Ishita Patel</p>
+                <p>Price : Rs 1500</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★★★★</p>
+                <button onclick="window.location.href='course6.html'">More Info</button>
+            </div>
+            <!-- Course Card 7 -->
+            <div class="course-card">
+                <img src="aeg.jpg" alt="Course Thumbnail">
+                <h3>Basic First Aid and CPR</h3>
+                <p>Category : Health</p>
+                <p>Instructor : Arjun Singh</p>
+                <p>Price : Rs 1000</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course7.html'">More Info</button>
+            </div>
+            <!-- Course Card 8 -->
+            <div class="course-card">
+                <img src="sada.jpg" alt="Course Thumbnail">
+                <h3>Full - Stack Web Development with the MERN Stack</h3>
+                <p>Category : Coding</p>
+                <p>Instructor : Vishal More</p>
+                <p>Price : Rs 7000</p>
+                <p>Difficulty : Advanced</p>
+                <p>Rating: ★★★★★</p>
+                <button onclick="window.location.href='course8.html'">More Info</button>
+            </div>
+            <!-- Course Card 9 -->
+            <div class="course-card">
+                <img src="itp.jpg" alt="Course Thumbnail">
+                <h3>Strategic Marketing Management</h3>
+                <p>Category : Business</p>
+                <p>Instructor : Snehal Patil</p>
+                <p>Price : Rs 4000</p>
+                <p>Difficulty : Intermediate</p>
+                <p>Rating: ★★★☆☆</p>
+                <button onclick="window.location.href='course9.html'">More Info</button>
+            </div>
+            <!-- Course Card 10 -->
+            <div class="course-card">
+                <img src="sada.jpg" alt="Course Thumbnail">
+                <h3>Intermediate Typography and Branding</h3>
+                <p>Category : Design</p>
+                <p>Instructor : Kavya Joshi</p>
+                <p>Price : Rs 3500</p>
+                <p>Difficulty : Intermediate</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course10.html'">More Info</button>
+            </div>
+            <!-- Course Card 11 -->
+            <div class="course-card">
+                <img src="aeg.jpg" alt="Course Thumbnail">
+                <h3>Advanced Public Health Research Methods</h3>
+                <p>Category : Health</p>
+                <p>Instructor : Kartik Verma</p>
+                <p>Price : Rs 6000</p>
+                <p>Difficulty : Advanced</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course11.html'">More Info</button>
+            </div>
+            <!-- Course Card 12 -->
+            <div class="course-card">
+                <img src="itp.jpg" alt="Course Thumbnail">
+                <h3>Basic Conversational English</h3>
+                <p>Category : Language</p>
+                <p>Instructor : Neha Sawant</p>
+                <p>Price : Rs 2000</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★☆☆☆</p>
+                <button onclick="window.location.href='course12.html'">More Info</button>
+            </div>
+            <!-- Course Card 13 -->
+            <div class="course-card">
+                <img src="sada.jpg" alt="Course Thumbnail">
+                <h3>JavaScript for Modern Web Development</h3>
+                <p>Category : Coding</p>
+                <p>Instructor : Rajesh Reddy</p>
+                <p>Price : Rs 4000</p>
+                <p>Difficulty : Intermediate</p>
+                <p>Rating: ★★★☆☆</p>
+                <button onclick="window.location.href='course13.html'">More Info</button>
+            </div>
+            <!-- Course Card 14 -->
+            <div class="course-card">
+                <img src="itp.jpg" alt="Course Thumbnail">
+                <h3>Advanced Operations and Supply Chain Strategy</h3>
+                <p>Category : Business</p>
+                <p>Instructor : Aditya Deshmukh</p>
+                <p>Price : Rs 6500</p>
+                <p>Difficulty : Advanced</p>
+                <p>Rating: ★★★★★</p>
+                <button onclick="window.location.href='course14.html'">More Info</button>
+            </div>
+            <!-- Course Card 15 -->
+            <div class="course-card">
+                <img src="aeg.jpg" alt="Course Thumbnail">
+                <h3>Introduction to Fitness and Exercise</h3>
+                <p>Category : Health</p>
+                <p>Instructor : Shruti Kapoor</p>
+                <p>Price : Free</p>
+                <p>Difficulty : Beginner</p>
+                <p>Rating: ★★★★☆</p>
+                <button onclick="window.location.href='course15.html'">More Info</button>
+            </div>
+
+        </div>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="termsofservice.html">Terms of Service</a>
+        </div>
+        <div class="contact-info">
+            <p>Email : skillspace@gmail.com</p>
+            <p>Phone : +91 56789 23456</p>
+        </div>
+    </footer>
+
+    <script src="coursesscript.js"></script>
+</body>
+
+</html>
